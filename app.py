@@ -148,7 +148,7 @@ def markdown_to_plain_text(markdown_text):
 
 @app.before_request
 def before_request():
-    g.chatbot = ContextAwareGeminiChatbot(api_key="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", model="google/gemma-7b-it:free")
+    g.chatbot = ContextAwareGeminiChatbot(api_key="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", model="google/gemma-7b-it:free")
 
 @app.route('/chat', methods=['POST', 'GET'])
 def chat():
@@ -162,3 +162,4 @@ def chat():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    

@@ -16,7 +16,7 @@
             margin: 50px auto;
             border: 1px solid #ccc;
             border-radius: 5px;
-            overflow: hidden;
+            /* overflow: auto; */
             padding: 10px;
             display: flex;
             justify-content: center;
@@ -63,12 +63,15 @@
             width: calc(100% - 40%);
             padding: 10px;
             border: none;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
         }
 
         .send-div{
             display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
         }
         .send-div #send-btn{
             width: 100px;
@@ -78,16 +81,21 @@
             color: white;
             cursor: pointer;
             margin-left: 10px;
+            border-radius: 5px;
         }
 
         .speech-btn {
             width: 60px;
             padding: 10px;
             background-color: #4CAF50;
-
+            margin-left: 10px;
             border: none;
             color: white;
             cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         body {
             background-color: #f2f2f2;
@@ -114,6 +122,7 @@
             font-size: 35px;
             font-weight: bold;
             display: flex;
+
         }
         #top-bar-head {
             margin-left: auto;
@@ -147,13 +156,17 @@
             margin-right: auto;
 
         }
+        #google_translate_element {
+            margin-left: 10px;
+            position: absolute;
+        }
     </style>
 </head>
 
 <body>
     <div id="top-bar">
         <div id="google_translate_element"></div>
-        <span id="top-bar-head">AI Enabled Agricultural Optimization</span>
+        <span id="top-bar-head" >AI Enabled Agricultural Optimization</span>
     </div>
     <div class="chat-container">
         <div class="chat-box" id="chat-box">
@@ -166,7 +179,12 @@
             <button id="send-btn" onclick="sendMessage()">Send</button>
         </div>
     </div>
-
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         function runSpeechRecognition() {
             var recognition = new webkitSpeechRecognition();
