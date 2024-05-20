@@ -23,7 +23,7 @@ Follow these instructions to set up the project on your local machine:
 1. Clone this repository to your local machine:
 
    ```
-   git clone (https://github.com/Anky9972/AI-ENABLED_AGRICULTURE)
+   git clone https://github.com/Anky9972/AI-ENABLED_AGRICULTURE
    ```
 
 2. Install the required Python dependencies using pip
