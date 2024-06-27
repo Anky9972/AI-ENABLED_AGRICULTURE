@@ -7,7 +7,7 @@ This repository contains a Flask web application that integrates a context-aware
 - **Context Awareness**: The chatbot is capable of understanding the context of the conversation to provide relevant responses, particularly focusing on topics related to crops and agriculture.
 - **Crop Information**: Given input parameters related to agricultural conditions (e.g., nitrogen, phosphorus, etc.), the chatbot predicts suitable crops and provides detailed information about them, including recommended spacing, time of sowing, method of sowing, etc.
 - **Interactive Chat Interface**: Users can interact with the chatbot through a user-friendly web interface.
-- **Chat History**: Users can engage in ongoing conversations with the chatbot and view previous interactions.
+
 
 ## Getting Started
 
